@@ -30,3 +30,12 @@ let result: number | string;
 result = 42; // Hợp lệ
 result = "Success"; // Hợp lệ
 // result = true; // Lỗi
+
+let status: "success" | "error" | "loading";
+status = "success"; // Hợp lệ
+// status = "failed"; // Lỗi
+
+let input: unknown = 42;
+if (typeof input === "number") {
+  let num: number = input; // Hợp lệ sau khi kiểm tra kiểu
+}
